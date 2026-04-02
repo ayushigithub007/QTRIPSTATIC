@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Adventure Cities</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    .hero-section {
+  background-image: url('./assets/hero.jpg');
+  height: 40vh;
+  width: 100%;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-section .form-control {
+      width: 70%;
+    }
+    .overlay-card img {
+      width: 100%;
+      min-height: 250px;
+      object-fit: cover;
+      z-index: 2;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+
+    .overlay-card:hover img {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+
+    .overlay-card .card-body {
+      position: absolute;
+      z-index: 3;
+      color: white;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+    }
+    .overlay-card {
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <div class="container-fluid p-0">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">QTrip</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse d-flex justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Explore</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section
+        class="hero-section d-flex flex-column justify-content-center align-items-center"
+      >
+        <h2>Welcome to QTRIP</h2>
+        <p>Explore the world of fantastic destinations</p>
+        <input
+          class="form-control"
+          type="text"
+          placeholder="search a city"
+          aria-label="default input example"
+        />
+      </section>
+
+      <section class="container mt-3">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card overlay-card rounded">
+              <img
+                src='./assets/bengaluru.jpg'
+              "
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">bengaluru</p>
+                <p>100+ Places</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card overlay-card rounded">
+              <img
+                src='./assets/dubai.jpg'
+              "
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">dubai</p>
+                <p>74+ Places</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card overlay-card rounded">
+              <img
+                src='./assets/goa.jpg'
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">goa</p>
+                <p>160+ Places</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card overlay-card rounded">
+              <img
+                src='./assets/kolkata.jpg'
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">kolkata</p>
+                <p>52+ Places</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card overlay-card rounded">
+              <img
+                src='./assets/malaysia.jpg'
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">malaysia</p>
+                <p>172+ Places</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card overlay-card rounded">
+              <img
+                src='./assets/mumbai.jpg'
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">mumbai</p>
+                <p>121+ Places</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-3">
+            <div class="card overlay-card rounded">
+              <img
+                src='./assets/paris.jpg'
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">paris</p>
+                <p>150+ Places</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="card overlay-card rounded">
+              <img
+                src='./assets/singapore.jpg'
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">singapore</p>
+                <p>89+ Places</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
